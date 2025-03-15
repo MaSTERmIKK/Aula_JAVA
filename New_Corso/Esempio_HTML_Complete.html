@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina Esemplificativa Completa</title>
+  <!-- Collegamento a un file CSS esterno (ipotetico) -->
+  <link rel="stylesheet" href="stile.css">
+  <!-- Script JavaScript in linea per esempio -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log("La pagina è stata caricata completamente.");
+    });
+  </script>
+</head>
+<body>
+  <!-- Header con navigazione -->
+  <header>
+    <h1>Benvenuti nella Pagina Esemplificativa</h1>
+    <nav>
+      <ul>
+        <li><a href="#presentazione">Presentazione</a></li>
+        <li><a href="#articoli">Articoli</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenuto principale -->
+  <main>
+    <!-- Sezione di presentazione -->
+    <section id="presentazione">
+      <article>
+        <h2>Chi Siamo</h2>
+        <p>Siamo un team dedicato alla realizzazione di progetti web innovativi.</p>
+        <img src="https://via.placeholder.com/300x200" alt="Immagine di presentazione">
+      </article>
+      <!-- Sidebar con contenuti aggiuntivi -->
+      <aside>
+        <h3>News e Aggiornamenti</h3>
+        <p>Resta aggiornato sulle ultime novità del settore web.</p>
+      </aside>
+    </section>
+
+    <!-- Sezione articoli -->
+    <section id="articoli">
+      <article>
+        <h2>Articolo 1: Introduzione al Web Design</h2>
+        <p>Il web design è una disciplina che combina estetica e funzionalità per creare esperienze utente efficaci.</p>
+      </article>
+      <article>
+        <h2>Articolo 2: Tecnologie Front-end</h2>
+        <p>HTML, CSS e JavaScript sono i pilastri per lo sviluppo di interfacce utente moderne e responsive.</p>
+      </article>
+    </section>
+
+    <!-- Sezione multimedia -->
+    <section id="multimedia">
+      <h2>Contenuti Multimediali</h2>
+      <article>
+        <h3>Video di Presentazione</h3>
+        <video controls width="320">
+          <source src="video-presentazione.mp4" type="video/mp4">
+          Il tuo browser non supporta il tag video.
+        </video>
+      </article>
+      <article>
+        <h3>Audio Intro</h3>
+        <audio controls>
+          <source src="audio-intro.mp3" type="audio/mpeg">
+          Il tuo browser non supporta il tag audio.
+        </audio>
+      </article>
+    </section>
+
+    <!-- Sezione contatti con form -->
+    <section id="contatti">
+      <h2>Contattaci</h2>
+      <form action="/invia-contatto" method="post">
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="messaggio">Messaggio:</label>
+          <textarea id="messaggio" name="messaggio" rows="4" required></textarea>
+        </div>
+        <div>
+          <button type="submit">Invia</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer della pagina -->
+  <footer>
+    <p>&copy; 2025 Esempio Web. Tutti i diritti riservati.</p>
+    <p>
+      <small>Contatti: <a href="mailto:info@example.com">info@example.com</a></small>
+    </p>
+  </footer>
+</body>
+</html>
