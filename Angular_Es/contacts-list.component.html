@@ -1,0 +1,54 @@
+<div class="container">
+  <h2>Rubrica Contatti</h2>
+
+  <!-- Form per l'inserimento di un nuovo contatto -->
+  <form (ngSubmit)="addContact()">
+    <div>
+      <label for="name">Nome:</label>
+      <input
+        type="text"
+        id="name"
+        [(ngModel)]="newContact.name"
+        name="name"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="phone">Telefono:</label>
+      <input
+        type="text"
+        id="phone"
+        [(ngModel)]="newContact.phone"
+        name="phone"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="email">Email (opzionale):</label>
+      <input
+        type="email"
+        id="email"
+        [(ngModel)]="newContact.email"
+        name="email"
+      />
+    </div>
+
+    <button type="submit">Aggiungi Contatto</button>
+  </form>
+
+  <!-- Messaggio se non ci sono contatti -->
+  <p *ngIf="contacts.length === 0">
+    Nessun contatto presente.
+  </p>
+
+  <!-- Lista contatti -->
+  <ul *ngIf="contacts.length > 0">
+    <li *ngFor="let contact of contacts; let i = index">
+      <strong>{{ contact.name }}</strong> - {{ contact.phone }}
+      <span *ngIf="contact.email">({{ contact.email }})</span>
+      <button (click)="removeContact(i)">Rimuovi</button>
+    </li>
+  </ul>
+</div>
