@@ -1,0 +1,11 @@
+Genera il componente contacts-list:
+
+- ng generate component contacts-list
+
+
+Verranno creati i file necessari:
+
+contacts-list.component.ts
+contacts-list.component.html
+contacts-list.component.css
+contacts-list.component.spec.ts (per i test)
