@@ -1,0 +1,13 @@
+contacts-app/
+├── src/
+│   ├── app/
+│   │   ├── app.component.ts
+│   │   ├── app.component.html
+│   │   ├── app.module.ts
+│   │   ├── contacts-list/
+│   │   │   ├── contacts-list.component.ts
+│   │   │   ├── contacts-list.component.html
+│   │   │   ├── contacts-list.component.css
+│   │   │   └── contacts-list.component.spec.ts
+│   └── ...
+└── ...
